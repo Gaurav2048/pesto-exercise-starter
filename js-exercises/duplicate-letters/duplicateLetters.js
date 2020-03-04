@@ -29,5 +29,7 @@ function remove_character(str, char_pos) {
 }
 
 module.exports = {
-  duplicateLetters,
-};
+   duplicateLetters
+}
+
+
