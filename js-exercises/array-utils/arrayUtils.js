@@ -21,8 +21,7 @@ Array.prototype.newMap = function (fn) {
 }
 
 function NewMapImpl(arr) {
-  console.log(arr.newMap(x10));
-
+  return arr.newMap(x10)
 }
 
 function x10(val) {
@@ -49,7 +48,7 @@ function MyFilterImpl(arr) {
   var new_arr = arr.myFilter(function (item) {
     return item > avg
   })
-  console.log(new_arr)
+  return new_arr
 }
 
 Array.prototype.myReduce = function (fn, init) {
@@ -73,7 +72,8 @@ function MyReduceImpl(arr, init) {
 //MyFilterImpl([1,2,3,4,5,6,7])
 
 
-//NewMapImpl([2,5,6,7])
+
+
 
 //NewForEach([2,5,1,3,5])
 
