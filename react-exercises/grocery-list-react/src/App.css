@@ -1,0 +1,294 @@
+.App {
+  text-align: center;
+  background-image: linear-gradient(90deg, lightgreen, white); 
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  background-image: linear-gradient(90deg, lightgreen, white); 
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.category_card {
+  border-radius:  10px;
+  padding: 10px;
+  width: 300px;
+  cursor: pointer;
+  z-index: 5;
+  height: 140px;
+  display: inline-block;
+  position: relative;
+}
+
+.category_item{
+  border-radius:  10px;
+  position: relative;
+  width: 300px;
+  box-shadow: 2px 2px   #ddd3d3ee;
+  height: 140px;
+  object-fit: cover;
+}
+
+.category_item img {
+  border-radius:  10px;
+  width: 300px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.category_text {
+  position: absolute;
+  margin: 0 ;
+  left: 0;
+  right: 0;
+  top: 65%; /* Adjust this value to move the positioned div up and down */
+  text-align: right;
+  margin-right: 20px;
+}
+
+.category_text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.category_overlay {
+  position: absolute;
+  background-image: linear-gradient(90deg, lightgreen, white); 
+  width: 300px;
+  opacity: 0.3;
+  height: 140px;
+  border-radius: 10px;
+}
+
+.large {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+}
+
+.small {
+  width: 45%;
+  margin: 20px;
+  background-color:rgba(255, 255, 255, 0.5);
+  border: 2px #dddddd solid;
+  right: 0;
+  z-index: 3;
+  height:90%;
+}
+
+.small .inner {
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+h2{
+  color: black;
+  z-index: 4;
+}
+
+.search_input {
+  padding: 15px;
+  width: 80%;
+  border-radius: 8px;
+  border: 1px #dddddd solid ;
+  font-size: 18px;
+}
+
+.search_input:hover {
+  border: 2px #cccccc solid;
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+.fab {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  background-color: green;
+  box-shadow: 2px 2px 2px 2px #cccccc;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 60px;
+  text-align: center;
+  bottom: 0;
+  margin-right: 10px;
+  margin-bottom: 30px ;
+  
+}
+
+.fab:active {
+  box-shadow: 2px 2px 2px 2px #cccccc !important;
+ 
+}
+
+.fab:focus {
+  outline: none;
+}
+
+.fab:hover {
+  box-shadow: 3px 3px 3px 3px #cccccced;
+}
+
+.item_select{
+  height: 50px;
+  width: 87%;
+  border-radius: 15px;
+  margin-top: 8px;
+  border: 1px #dddddd solid ;
+  font-size: 18px;
+}
+
+.action_area{
+  display: inline;
+}
+
+.btn_cancel {
+  width: 43%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: white;
+  color: greenyellow;
+  border-width: 0px;
+  box-shadow: 1px 1px 1px 1px #dddddd;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 4px;
+  left: 10px;
+}
+
+.btn_add {
+  width: 43%;
+  height: 50px;
+  border-radius: 3px;
+  border-radius: 3px;
+  background-color: greenyellow;
+  color: white;
+  cursor: pointer;
+  border-width: 0px;
+  box-shadow: 1px 1px 1px 1px #dddddd;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 4px;
+  right: 10px;
+}
+
+.btn_add:focus , .btn_cancel:focus {
+  outline:  none;
+}
+
+.item_select:focus {
+  outline: none;
+}
+
+.add_dialog {
+  display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px ;
+    background-color: white
+}
+
+.list_section{
+  height: 80%;
+  overflow: scroll;
+  
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.food_item_selected{
+  padding: 14px;
+  width: 80%;
+  border: 1px #dddddd solid;
+  font-size: 18px;
+  background-color: red;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  justify-self: center;
+  margin:  auto;
+  margin-top: 2px;
+}
+
+.food_item {
+  padding: 14px;
+  width: 80%;
+  border: 1px #dddddd solid;
+  font-size: 18px;
+  cursor: pointer;
+  color: black;
+  justify-self: center;
+  background-color: white;
+  opacity: 0.8;
+  margin:  auto;
+  margin-top: 2px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
