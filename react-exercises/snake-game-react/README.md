@@ -2,9 +2,9 @@
 
 # Submission
 
-Game URL: _____
+Game URL:  https://5e8b2a98e46abc21483bac6b--snake-game-site.netlify.com
 
-Mockup URL: _____
+Mockup URL: https://balsamiq.cloud/s7wo32l/ph3inqp
 
 ## How to do the question
 - Make a new branch `snake-game`.

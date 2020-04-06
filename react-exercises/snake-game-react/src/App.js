@@ -21,6 +21,7 @@ function App() {
         <div className="play_ground" >
           <Snake score = {()=>onScoreIncrease()} speed = {speed} />
         </div>
+        <h3 style={{marginTop: '85vh'}}>Press Space to start.</h3>
     </div>
   );
 }
